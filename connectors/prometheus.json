@@ -2,6 +2,6 @@
   "type": "prometheus",
   "display_name": "Prometheus",
   "config": {
-    "url": "http://prometheus:9090/api/v1/otlp"
+    "url": "http://13.53.198.186:9090"
   }
 }
