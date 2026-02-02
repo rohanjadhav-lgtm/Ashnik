@@ -1,4 +1,10 @@
 {
   "description": "For prometheus Data fetch ",
-  "capabilities": {}
+  "capabilities": {},
+  "datasources": [
+    {
+      "name": "prometheus",
+      "type": "prometheus"
+    }
+  ]
 }
