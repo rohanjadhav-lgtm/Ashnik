@@ -1,4 +1,10 @@
 {
   "description": "for checking tables and name ",
-  "capabilities": {}
+  "capabilities": {},
+  "datasources": [
+    {
+      "name": "postgresql",
+      "type": "postgres"
+    }
+  ]
 }
