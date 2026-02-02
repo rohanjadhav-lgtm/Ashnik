@@ -1,0 +1,436 @@
+{
+  "type": "postgres",
+  "display_name": "PostgreSQL",
+  "config": {
+    "categories": [
+      {
+        "description": "This group of tables represents a banking benchmark system that tracks accounts, branches, and tellers along with their respective balances. It includes a history table to record all financial transactions (deltas) between accounts, branches, and tellers with timestamps.",
+        "graph": {
+          "edges": {
+            "public.pgbench_accounts": [
+              {
+                "cols": [
+                  [
+                    "bid",
+                    "bid"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_accounts",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_branches"
+              },
+              {
+                "cols": [
+                  [
+                    "filler",
+                    "filler"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_accounts",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_branches"
+              },
+              {
+                "cols": [
+                  [
+                    "filler",
+                    "filler"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_accounts",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_history"
+              },
+              {
+                "cols": [
+                  [
+                    "aid",
+                    "aid"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_accounts",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_history"
+              },
+              {
+                "cols": [
+                  [
+                    "bid",
+                    "bid"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_accounts",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_history"
+              },
+              {
+                "cols": [
+                  [
+                    "bid",
+                    "bid"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_accounts",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_tellers"
+              },
+              {
+                "cols": [
+                  [
+                    "filler",
+                    "filler"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_accounts",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_tellers"
+              }
+            ],
+            "public.pgbench_branches": [
+              {
+                "cols": [
+                  [
+                    "bid",
+                    "bid"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_branches",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_accounts"
+              },
+              {
+                "cols": [
+                  [
+                    "filler",
+                    "filler"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_branches",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_accounts"
+              },
+              {
+                "cols": [
+                  [
+                    "bid",
+                    "bid"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_branches",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_history"
+              },
+              {
+                "cols": [
+                  [
+                    "filler",
+                    "filler"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_branches",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_history"
+              },
+              {
+                "cols": [
+                  [
+                    "bid",
+                    "bid"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_branches",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_tellers"
+              },
+              {
+                "cols": [
+                  [
+                    "filler",
+                    "filler"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_branches",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_tellers"
+              }
+            ],
+            "public.pgbench_history": [
+              {
+                "cols": [
+                  [
+                    "bid",
+                    "bid"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_history",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_accounts"
+              },
+              {
+                "cols": [
+                  [
+                    "aid",
+                    "aid"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_history",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_accounts"
+              },
+              {
+                "cols": [
+                  [
+                    "filler",
+                    "filler"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_history",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_accounts"
+              },
+              {
+                "cols": [
+                  [
+                    "bid",
+                    "bid"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_history",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_branches"
+              },
+              {
+                "cols": [
+                  [
+                    "filler",
+                    "filler"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_history",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_branches"
+              },
+              {
+                "cols": [
+                  [
+                    "tid",
+                    "tid"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_history",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_tellers"
+              },
+              {
+                "cols": [
+                  [
+                    "bid",
+                    "bid"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_history",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_tellers"
+              },
+              {
+                "cols": [
+                  [
+                    "filler",
+                    "filler"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_history",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_tellers"
+              }
+            ],
+            "public.pgbench_tellers": [
+              {
+                "cols": [
+                  [
+                    "bid",
+                    "bid"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_tellers",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_accounts"
+              },
+              {
+                "cols": [
+                  [
+                    "filler",
+                    "filler"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_tellers",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_accounts"
+              },
+              {
+                "cols": [
+                  [
+                    "filler",
+                    "filler"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_tellers",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_branches"
+              },
+              {
+                "cols": [
+                  [
+                    "bid",
+                    "bid"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_tellers",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_branches"
+              },
+              {
+                "cols": [
+                  [
+                    "bid",
+                    "bid"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_tellers",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_history"
+              },
+              {
+                "cols": [
+                  [
+                    "filler",
+                    "filler"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_tellers",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_history"
+              },
+              {
+                "cols": [
+                  [
+                    "tid",
+                    "tid"
+                  ]
+                ],
+                "confidence": 1,
+                "from": "public.pgbench_tellers",
+                "kind": "HEURISTIC",
+                "note": "name similarity",
+                "to": "public.pgbench_history"
+              }
+            ]
+          },
+          "nodes": {
+            "public.pgbench_accounts": {
+              "ID": "public.pgbench_accounts",
+              "columns": {
+                "abalance": "integer",
+                "aid": "integer",
+                "bid": "integer",
+                "filler": "character"
+              }
+            },
+            "public.pgbench_branches": {
+              "ID": "public.pgbench_branches",
+              "columns": {
+                "bbalance": "integer",
+                "bid": "integer",
+                "filler": "character"
+              }
+            },
+            "public.pgbench_history": {
+              "ID": "public.pgbench_history",
+              "columns": {
+                "aid": "integer",
+                "bid": "integer",
+                "delta": "integer",
+                "filler": "character",
+                "mtime": "timestamp without time zone",
+                "tid": "integer"
+              }
+            },
+            "public.pgbench_tellers": {
+              "ID": "public.pgbench_tellers",
+              "columns": {
+                "bid": "integer",
+                "filler": "character",
+                "tbalance": "integer",
+                "tid": "integer"
+              }
+            }
+          }
+        },
+        "id": "category-1",
+        "name": "Banking Transaction System"
+      }
+    ],
+    "database": "mcp_demo",
+    "host": "65.0.99.134",
+    "port": 5432,
+    "schemas": [
+      "public"
+    ],
+    "sslMode": "disable"
+  },
+  "shared_secrets": true
+}
